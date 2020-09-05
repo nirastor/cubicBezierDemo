@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cubic-bezier-demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <svg class="graph" version="1.1" width="406" height="600"
+        viewBox="0 0 403 600"
+        baseProfile="full"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        xmlns:ev="http://www.w3.org/2001/xml-events">
+    
+            <rect x="3" y="100" width="400" height="400" fill="#999"/>
+
+            <polyline class="graph-line" stroke="#ccc" stroke-width="5px" fill="none"
+            points="" />
+
+            <polyline class="line-point-1" stroke="darkred" stroke-width="3px" fill="none"
+            points="3,500 3,500" />
+            
+            <polyline class="line-point-2" stroke="blue" stroke-width="3px" fill="none"
+            points="403,100 403,100" />
+         
+    </svg>
+
+    <section class="legend">
+        <h1 class="legend__header-text">Кривые Безье третьего порядка</h1>
+        <p class="legend__description">Начало в (0, 0), конец в (1,1), две промежуточных точки задаются.</p>
+
+        <form class="legend__inputs-area">
+            <div class="inputs-area__point point-1">
+                <div class="input_element">
+                    <label for="p1x"><span class="label-color-1">x1</span> (от 0 до 1)</label>
+                    <input class="legend__input" id="p1x" value="0"> 
+                </div>
+                <div class="input_element">
+                    <label for="p1x"><span class="label-color-1">y1</span></label>
+                    <input class="legend__input" id="p1y" value="0.7">
+                </div>
+            </div>
+            <div class="inputs-area__point point-2">
+                <div class="input_element">
+                    <label for="p2x"><span class="label-color-2">x2</span> (от 0 до 1)</label>
+                    <input class="legend__input" id="p2x" value="0.5">
+                </div>
+                <div class="input_element">
+                    <label for="p2x"><span class="label-color-2">y2</span></label>
+                    <input class="legend__input" id="p2y" value="1.2">
+                </div>
+            </div>
+        </form>
+
+            <div class="legend__error-message--Wrong">Недопустимые значения</div>
+        </section>
+    </section>
+
+    
+
+
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>
